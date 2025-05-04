@@ -7,7 +7,7 @@
   
   "short_name": "Redirect to minecraft.wiki",
 
-  "version": "1.0.3",
+  "version": "1.0.4",
     
   "description": "Redirects minecraft.fandom to minecraft.wiki",
 
@@ -17,7 +17,7 @@
     "128": "img/steve-icon.png"
   },
 
-  "permissions": ["activeTab", "storage", "webNavigation"],
+  "permissions": ["storage", "webNavigation"],
 
   "content_security_policy": {
     "sandbox": "sandbox allow-scripts; 'unsafe-inline' 'self'"
