@@ -1,6 +1,6 @@
 let redirectEnabled = true
 
-chrome.webNavigation.onCommitted.addListener((nav) => {
+chrome.webNavigation.onBeforeNavigate.addListener((nav) => {
   if(redirectEnabled){
     chrome.tabs.query({ currentWindow: true, lastFocusedWindow: true }, (tab) => {
       let toWiki = new URL(nav.url).href.replace('minecraft.fandom.com', 'minecraft.wiki')
